@@ -13,13 +13,13 @@
     ],
     "psr-4": {
       "Blackbird\\Universes\\": ""
-    },
-    "authors": [
-      {
-        "name": "Blackbird Agency",
-        "email": "contact@bird.eu",
-        "homepage": "https://black.bird.eu"
-      }
-    ]
-  }
+    }
+  },
+  "authors": [
+    {
+      "name": "Blackbird Agency",
+      "email": "contact@bird.eu",
+      "homepage": "https://black.bird.eu"
+    }
+  ]
 }
