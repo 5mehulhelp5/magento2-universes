@@ -1,0 +1,3 @@
+form[action*=blackbird_universes] .accordion .config .label, form[action*=blackbird_universes] .accordion .config .value {
+    width: auto;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="blackbird_extensions" translate="label" sortOrder="100">
+            <label>Blackbird</label>
+        </tab>
+        <section id="blackbird_universes" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>blackbird_extensions</tab>
+            <label>Universes</label>
+            <resource>Blackbird_Universes::config</resource>
+
+            <group id="general" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="universes" translate="label comment" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Universes</label>
+                    <frontend_model>Blackbird\Universes\Block\System\Config\Form\Field\Universes</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment>
+                        <![CDATA[
+
+                        ]]>
+                    </comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
